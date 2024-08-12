@@ -4,7 +4,7 @@ import json
 import requests
 
 # Set OpenAI API key
-openai.api_key = ""
+openai.api_key = st.secrets["openai_key"]
 
 def get_product_info(query):
     query_json = json.dumps({"query": query})
